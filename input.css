@@ -5,4 +5,18 @@
     @apply focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:focus:ring-yellow-900
 }
 
+/* This will not apply in case  is before (bg-purple-400 i;e any utility class before this class) because this is written before tailwind utilities so it will not
+override utilities
+*/
+/*
+To override this default utility write it after utility
+*/
+/* .my-bg {
+    @apply bg-red-300
+} */
+
 @tailwind utilities;
+
+.my-bg {
+    @apply bg-red-300
+}
